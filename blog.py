@@ -11,7 +11,7 @@ SECRET_KEY = 'hard_to_guess'
 
 app = Flask(__name__)
 
-# pulls in the app configuration by looking for UPPERCASE variables
+# Pulls in the app configuration by looking for UPPERCASE variables
 app.config.from_object(__name__)
 
 # function used for connecting to the database
