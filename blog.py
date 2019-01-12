@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, session, \
 	flash, redirect, url_for, g
 import sqlite3
 
-# configuration
+# configuration 
 DATABASE = 'blog.db'
 USERNAME = 'admin'
 PASSWORD = 'admin'
@@ -11,7 +11,7 @@ SECRET_KEY = 'hard_to_guess'
 
 app = Flask(__name__)
 
-# pulls in app configuration by looking for UPPERCASE variables
+# pulls in the app configuration by looking for UPPERCASE variables
 app.config.from_object(__name__)
 
 # function used for connecting to the database
